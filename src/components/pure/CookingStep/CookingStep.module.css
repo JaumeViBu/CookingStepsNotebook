@@ -5,7 +5,11 @@ li {
 
 li span {
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 100%;
+  text-align: left;
+}
+
+li img {
+  width: 64px;
 }

@@ -1,66 +1,75 @@
-import React from "react";
+import React, { useState } from "react";
 import CookingStep from "../pure/CookingStep/CookingStep";
 import styles from "./CookingStepsList.module.css";
+
+//img's
+import cutImg from "../../assets/cookingIcons/cut.png";
+import boilImg from "../../assets/cookingIcons/boil.png";
+import mixImg from "../../assets/cookingIcons/mix.png";
+import panImg from "../../assets/cookingIcons/pan.png";
+import serveImg from "../../assets/cookingIcons/serve.png";
+import spicesImg from "../../assets/cookingIcons/spices.png";
 
 const defaultSteps = [
   {
     icon: {
       imgAlt: "icon to represent cut actions",
-      img: "./src/assets/cookingIcons/cut.png",
+      img: cutImg,
     },
     desc: "Broccoli, Zanahoria, Panceta, Diente de ajo",
   },
   {
     icon: {
       imgAlt: "icon to represent cooking in pan actions",
-      img: "./src/assets/cookingIcons/pan.png",
+      img: panImg,
     },
     desc: "Broccoli",
   },
   {
     icon: {
       imgAlt: "icon to represent cooking in pan actions",
-      img: "./src/assets/cookingIcons/pan.png",
+      img: panImg,
     },
-    desc: "Cuando Brocoli descongelado -> Añadir panceta",
+    desc: "Brocoli descongelado ? Add panceta",
   },
   {
     icon: {
       imgAlt: "icon to represent cooking in pan actions",
-      img: "./src/assets/cookingIcons/pan.png",
+      img: panImg,
     },
-    desc: "Cuando Panceta empieza a soltar grasa -> Añadir zanahoria",
+    desc: "Panceta suelta grasa ? Add zanahoria",
   },
   {
     icon: {
       imgAlt: "icon to represent cooking in pan actions",
-      img: "./src/assets/cookingIcons/pan.png",
+      img: panImg,
     },
-    desc: "Cuando Broccoli y/o Zanahoria este casi lista -> Añadir ajo",
+    desc: "Broccoli o Zanahoria esta casi lista ? Add ajo",
   },
   {
     icon: {
       imgAlt: "icon to represent adding spices actions",
-      img: "./src/assets/cookingIcons/spices.png",
+      img: spicesImg,
     },
     desc: "Sal pimentar al gusto...",
   },
   {
     icon: {
       imgAlt: "icon to represent serving actions",
-      img: "./src/assets/cookingIcons/serve.png",
+      img: serveImg,
     },
     desc: "Servir",
   },
 ];
 
 const CookingStepsList = () => {
+  const [steps, setSteps] = useState(defaultSteps);
+
   return (
     <ul>
-      {defaultSteps.map((step, i) => (
+      {steps.map((step, i) => (
         <CookingStep cookingStepProp={step} key={i} />
       ))}
-      {/* <CookingStep cookingStepProp={defaultCookingStep} /> */}
     </ul>
   );
 };
