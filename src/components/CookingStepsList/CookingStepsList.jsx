@@ -16,6 +16,7 @@ const defaultSteps = [
       imgAlt: "icon to represent cut actions",
       img: cutImg,
     },
+    id: 0,
     desc: "Broccoli, Zanahoria, Panceta, Diente de ajo",
   },
   {
@@ -23,6 +24,7 @@ const defaultSteps = [
       imgAlt: "icon to represent cooking in pan actions",
       img: panImg,
     },
+    id: 1,
     desc: "Broccoli",
   },
   {
@@ -30,6 +32,7 @@ const defaultSteps = [
       imgAlt: "icon to represent cooking in pan actions",
       img: panImg,
     },
+    id: 2,
     desc: "Brocoli descongelado ? Add panceta",
   },
   {
@@ -37,6 +40,7 @@ const defaultSteps = [
       imgAlt: "icon to represent cooking in pan actions",
       img: panImg,
     },
+    id: 3,
     desc: "Panceta suelta grasa ? Add zanahoria",
   },
   {
@@ -44,6 +48,7 @@ const defaultSteps = [
       imgAlt: "icon to represent cooking in pan actions",
       img: panImg,
     },
+    id: 4,
     desc: "Broccoli o Zanahoria esta casi lista ? Add ajo",
   },
   {
@@ -51,6 +56,7 @@ const defaultSteps = [
       imgAlt: "icon to represent adding spices actions",
       img: spicesImg,
     },
+    id: 5,
     desc: "Sal pimentar al gusto...",
   },
   {
@@ -58,6 +64,7 @@ const defaultSteps = [
       imgAlt: "icon to represent serving actions",
       img: serveImg,
     },
+    id: 6,
     desc: "Servir",
   },
 ];

@@ -1,8 +1,11 @@
 #root {
   max-width: 1280px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   padding: 2rem 1rem;
   text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .logo {
@@ -44,4 +47,8 @@
 footer {
   padding-top: 6rem;
   font-size: 0.8rem;
+}
+
+.container {
+  width: 100%;
 }

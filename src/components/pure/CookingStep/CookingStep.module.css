@@ -1,6 +1,7 @@
 li {
   display: flex;
   gap: 10px;
+  width: 20rem;
 }
 
 li span {
@@ -19,6 +20,24 @@ li img {
   text-decoration-thickness: 2px;
 }
 
+.editMode {
+  align-items: flex-end;
+}
+
 li.striked img {
   filter: grayscale(100%);
+}
+
+li input {
+  width: 100%;
+  padding: 1rem 0.5rem;
+  padding-bottom: 0.2rem;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+  font-size: inherit;
+}
+
+li input:focus {
+  border-bottom: 1px solid rgb(0, 136, 255);
 }
