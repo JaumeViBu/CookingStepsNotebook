@@ -2,17 +2,15 @@ import React, { useState } from "react";
 import styles from "./CookingStep.module.css";
 
 const CookingStep = ({ cookingStepProp }) => {
-  // cookingStepProp = {
-  //   icon: {
-  //     imgAlt: "icon to represent cut actions",
-  //     img: "./assets/cookingIcons/cut.png",
-  //   },
-  //   desc: "Broccoli",
-  // };
   const [cookingStep, setCookingStep] = useState(cookingStepProp);
+  const [striked, setStriked] = useState(false);
+
+  function handleLiOnClick(e) {
+    setStriked(!striked);
+  }
 
   return (
-    <li>
+    <li className={striked ? styles.striked : ""} onClick={handleLiOnClick}>
       <img src={cookingStep.icon.img} alt={cookingStep.icon.imgAlt} />
       <span>{cookingStep.desc}</span>
     </li>
