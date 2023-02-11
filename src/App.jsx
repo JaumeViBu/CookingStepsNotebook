@@ -6,7 +6,7 @@ import CookingStepsList from "./components/CookingStepsList/CookingStepsList";
 
 function App() {
   return (
-    <div>
+    <div className=".container">
       <CookingStepsList />
       <footer>
         <a href="https://www.freepik.com/free-vector/cooking-isometric-icons-collection_4358859.htm">
