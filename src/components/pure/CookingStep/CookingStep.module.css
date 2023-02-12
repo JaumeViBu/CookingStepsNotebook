@@ -29,8 +29,12 @@ li.striked img {
   filter: grayscale(100%);
 }
 
-li input {
+li div {
   width: 100%;
+}
+
+li input {
+  width: 80%;
   padding: 1rem 0.5rem;
   padding-bottom: 0.2rem;
   border: none;
@@ -47,4 +51,9 @@ li input:focus {
     transparent,
     transparent
   );
+}
+
+li .icon {
+  padding-left: 10px;
+  color: crimson;
 }
