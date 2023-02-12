@@ -23,7 +23,7 @@ const CookingStep = ({
   const [confirmDeleteOpen, setConfirmDeleteOpen] = useState(false);
 
   function handleLiOnClick(e) {
-    if (e.target.tagName == "SPAN") setStriked(!striked);
+    if (!editMode) setStriked(!striked);
   }
 
   function handleLiOnContextMenu(e) {
